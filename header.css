@@ -1,1 +1,114 @@
-#header{width:100vw;height:50vh;background-image:url(art/background.png);background-position:center;background-size:cover;text-align:center}#header #logo{display:inline-block;width:15vw;height:5vw;margin-top:1vw;background-image:url(art/logo.png);background-size:contain;background-repeat:no-repeat;position:relative;left:-10%}#header .row-1{display:inline-block;text-align:center;height:5vw;position:absolute;margin-top:3vw;top:0px}#header .row-1 .nav{display:inline-block;position:relative;top:50%;left:-20%;transform:translate(0px, -50%);font-size:3vw;font-family:"Open Sans", verdana, sans-serif;color:white}#header .row-1 .nav a{color:white;display:inline-block;text-decoration:none;font-family:dual}#header .row-1 #highlight{display:inline-block;width:10px;height:0.2vw;background:white;position:relative;top:-2vw;width:0%;transform:translate(100%, 0%);left:-100%;transition:0.3s}#header .b1{display:inline-block;position:absolute;top:-5vw;left:-5vw}#header .b1:hover #highlight{width:100%}#header .b2{display:inline-block;position:absolute;top:-5vw;left:5vw}#header .b2:hover #highlight{width:100%}#header .b3{display:inline-block;position:absolute;top:-5vw;left:15vw}#header .b3:hover #highlight{width:100%}
+#header {
+  width: 100vw;
+  height: 50vh;
+  background-image: url(art/background.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+#header #logo {
+  display: inline-block;
+  width: 15vw;
+  height: 5vw;
+  margin-top: 1vw;
+  background-image: url(art/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  left: -10%;
+}
+#header .row-1 {
+  display: inline-block;
+  text-align: center;
+  height: 5vw;
+  position: absolute;
+  margin-top: 3vw;
+  top: 0px;
+}
+#header .row-1 .nav {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: -20%;
+  transform: translate(0px, -50%);
+  font-size: 3vw;
+  font-family: "Open Sans", verdana, sans-serif;
+  color: white;
+}
+#header .row-1 .nav a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-family: dual;
+}
+#header .row-1 #highlight {
+  display: inline-block;
+  width: 10px;
+  height: 0.2vw;
+  background: white;
+  position: relative;
+  top: -2vw;
+  width: 0%;
+  transform: translate(100%, 0%);
+  left: -100%;
+  transition: 0.3s;
+}
+#header .b1 {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
+#header .b1::after {
+  content: "";
+  display: inline-block;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 5px);
+  width: 0px;
+  background-color: white;
+  transition: 300ms;
+}
+#header .b1:hover::after {
+  width: 100%;
+}
+#header .b2 {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
+#header .b2::after {
+  content: "";
+  display: inline-block;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 5px);
+  width: 0px;
+  background-color: white;
+  transition: 300ms;
+}
+#header .b2:hover::after {
+  width: 100%;
+}
+#header .b3 {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
+#header .b3::after {
+  content: "";
+  display: inline-block;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 5px);
+  width: 0px;
+  background-color: white;
+  transition: 300ms;
+}
+#header .b3:hover::after {
+  width: 100%;
+}
+
+/*# sourceMappingURL=header.css.map */

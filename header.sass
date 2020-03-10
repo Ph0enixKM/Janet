@@ -60,9 +60,20 @@
 
   @for $i from 1 to 4
     .b#{$i}
+      position: relative
       display: inline-block
-      position: absolute
-      top: -5vw
-      left: 10vw * $i - 15
-      &:hover #highlight
+      padding-top: 10px
+      &::after
+        content: ""
+        display: inline-block
+        height: 5px
+        position: absolute
+        left: 0
+        top: calc(100% + 5px)
+        width: 0px
+        background-color: white
+        transition: 300ms
+      &:hover::after
         width: 100%
+        
+      
